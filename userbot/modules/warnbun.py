@@ -6,8 +6,6 @@
 .gbun
 .fw
 .ocb"""
-import asyncio
-from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from uniborg.util import admin_cmd
 
@@ -29,10 +27,6 @@ async def _(event):
     await event.delete()
 
 """.admin Plugin for @UniBorg"""
-import asyncio
-from telethon import events
-from telethon.tl.types import ChannelParticipantsAdmins
-from uniborg.util import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="warn2"))
@@ -52,10 +46,6 @@ async def _(event):
     await event.delete()
 
 """.admin Plugin for @UniBorg"""
-import asyncio
-from telethon import events
-from telethon.tl.types import ChannelParticipantsAdmins
-from uniborg.util import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="warn3"))
@@ -75,10 +65,6 @@ async def _(event):
     await event.delete()
 
 """.admin Plugin for @UniBorg"""
-import asyncio
-from telethon import events
-from telethon.tl.types import ChannelParticipantsAdmins
-from uniborg.util import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="warn0"))
@@ -98,10 +84,6 @@ async def _(event):
     await event.delete()
 
 """.admin Plugin for @UniBorg"""
-import asyncio
-from telethon import events
-from telethon.tl.types import ChannelParticipantsAdmins
-from uniborg.util import admin_cmd
 
 
 @borg.on(admin_cmd(pattern="gbun"))
@@ -136,6 +118,7 @@ async def _(event):
     else:
         await event.reply(mentions)
     await event.delete()
+
 
 @borg.on(admin_cmd("fw"))
 async def _(event):
